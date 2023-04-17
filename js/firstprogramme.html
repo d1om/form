@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program</title>
+    <div class="link">
+        
+    </div>
+</head>
+
+<body id="changecolor">
+    <button onclick="generate()">change color</button>
+    <h1>Programming in javascript</h1>
+    <p id="demo"></p>
+    <p id="boby"></p>
+    <button onclick="document.write(30-10)">click to get result</button>
+    <button onclick="document.write(2*2)">show me</button>
+    <p id="blog"></p>
+    <h2 id="human"></h2>
+    <h3 id="KK">its a brand new day oh yes</h3>
+    <button onclick="KFC()">click</button>
+    <p id="Date"></p>
+    
+<button onclick="document.getElementById('Date').innerHTML= new Date()">click to get result</button>
+?<h3>JAVA NA WAHALA I SWEAR</h3>
+
+    <script>
+
+        document.getElementById("demo").innerHTML = 10 * 30
+        document.getElementById("boby").innerHTML = 15 + 10
+        document.write(200 / 5);
+        document.write("<br>")
+        document.write("The day is bright and clear")
+        document.getElementById("blog").innerHTML = "this is a brand new week";
+function generate(){
+    document.getElementById("changecolor").style.backgroundColor='green'
+    }
+
+        // window.alert("Congratulations you won the code!");
+        console.log("There is no error in my code....");
+
+        // let a;
+        // let b;
+        // let c;
+        // a = 30;
+        // b = 20;
+        // c = a + b;
+        // document.write(c);
+
+        function myfunction(){
+        //document.getElementById("blog").innerHTML(2*2);
+        document.write(2*2);
+        }
+        var human={
+        firstname:'Dominic',
+        lastname:'Okechukwu',
+        age:25,
+        address: 'Idi-ape Ibadan'
+        };
+
+        document.getElementById('human').innerHTML=human.lastname + " " + human.firstname + "is living in" +
+        human.address +"and the age of the person is" + human.age;
+
+        var X=10; var Y="20";
+        var Z;
+        Z= X+Y
+        console.log(Z)
+        var sentence = "The work now begin"
+        console.log(sentence.indexOf("The"))
+        console.log(sentence.search("now"))
+        console.log(sentence.slice(4, 8))
+
+        // let music = "my best song is amapiano"
+        // let music2= music.replace ('amapiano', 'jazz')
+
+        // document.getElementById('replace').innerHTML= music2
+
+        const amount = 98.672
+        console.log(amount)
+        console.log(amount.toPrecision())
+        console.log(amount.toPrecision(2))
+
+        const mynumber='1000'
+        console.log(Number(mynumber))
+        console.log(mynumber)
+
+        const mynumbertwo = 10
+        console.log(parseInt(mynumbertwo))
+        console.log(parseFloat(mynumbertwo))
+
+        var phones=["samsung", "iphone", "tecno"]
+        console.log(phones)
+        console.log(phones[2])
+        console.log(phones.sort())
+        console.log(phones.reverse())
+        console.log(new Date())
+        function KFC(){
+            document.getElementById("KK").style.color="red"
+        }
+
+
+
+        </script>
+</body>
+
+</html>
